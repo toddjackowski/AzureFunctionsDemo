@@ -4,7 +4,7 @@ using Microsoft.Azure.WebJobs.Host;
 
 namespace AzureFunctionsDemo
 {
-    public static class Function1
+    public static class TimerTriggerDemo
     {
         [FunctionName("Function1")]
         public static void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, TraceWriter log)
