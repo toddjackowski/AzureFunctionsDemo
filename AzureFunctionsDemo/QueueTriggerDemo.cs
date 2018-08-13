@@ -6,7 +6,7 @@ namespace AzureFunctionsDemo
 {
     public static class QueueTriggerDemo
     {
-        [FunctionName("Function2")]
+        [FunctionName("QueueTriggerDemo")]
         public static void Run([QueueTrigger("myqueue-items", Connection = "")]string myQueueItem, TraceWriter log)
         {
             log.Info($"C# Queue trigger function processed: {myQueueItem}");

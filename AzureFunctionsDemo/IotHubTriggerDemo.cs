@@ -12,7 +12,7 @@ namespace AzureFunctionsDemo
     {
         private static HttpClient client = new HttpClient();
 
-        [FunctionName("Function1")]
+        [FunctionName("IotHubTriggerDemo")]
         public static void Run([IoTHubTrigger("messages/events", Connection = "")]EventData message, TraceWriter log)
         {
             log.Info($"C# IoT Hub trigger function processed a message: {Encoding.UTF8.GetString(message.GetBytes())}");

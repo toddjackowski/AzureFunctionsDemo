@@ -8,7 +8,7 @@ namespace AzureFunctionsDemo
 {
     public static class GitHubWebHookTriggerDemo
     {
-        [FunctionName("Function1")]
+        [FunctionName("GitHubWebHookTriggerDemo")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(WebHookType = "github")]HttpRequestMessage req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");

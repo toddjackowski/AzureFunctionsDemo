@@ -10,7 +10,7 @@ namespace AzureFunctionsDemo
 {
     public static class HttpTriggerDemo
     {
-        [FunctionName("Function1")]
+        [FunctionName("HttpTriggerDemo")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");

@@ -7,7 +7,7 @@ namespace AzureFunctionsDemo
 {
     public static class CosmoDbDemo
     {
-        [FunctionName("Function1")]
+        [FunctionName("CosmoDbDemo")]
         public static void Run([CosmosDBTrigger(
             databaseName: "databaseName",
             collectionName: "collectionName",

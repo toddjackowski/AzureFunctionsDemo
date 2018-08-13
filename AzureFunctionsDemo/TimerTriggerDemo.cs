@@ -6,7 +6,7 @@ namespace AzureFunctionsDemo
 {
     public static class TimerTriggerDemo
     {
-        [FunctionName("Function1")]
+        [FunctionName("TimerTriggerDemo")]
         public static void Run([TimerTrigger("0 */5 * * * *")]TimerInfo myTimer, TraceWriter log)
         {
             log.Info($"C# Timer trigger function executed at: {DateTime.Now}");
