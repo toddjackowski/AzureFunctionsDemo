@@ -8,14 +8,14 @@ using System.Net.Http;
 
 namespace AzureFunctionsDemo
 {
-    public static class IotHubTriggerDemo
-    {
-        private static HttpClient client = new HttpClient();
+    //public static class IotHubTriggerDemo
+    //{
+    //    private static HttpClient client = new HttpClient();
 
-        [FunctionName("IotHubTriggerDemo")]
-        public static void Run([IoTHubTrigger("messages/events", Connection = "")]EventData message, TraceWriter log)
-        {
-            log.Info($"C# IoT Hub trigger function processed a message: {Encoding.UTF8.GetString(message.GetBytes())}");
-        }
-    }
+    //    [FunctionName("IotHubTriggerDemo")]
+    //    public static void Run([IoTHubTrigger("messages/events", Connection = "")]EventData message, TraceWriter log)
+    //    {
+    //        log.Info($"C# IoT Hub trigger function processed a message: {Encoding.UTF8.GetString(message.GetBytes())}");
+    //    }
+    //}
 }
